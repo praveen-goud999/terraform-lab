@@ -11,8 +11,8 @@ resource "google_compute_subnetwork" "subnet" {
   ip_cidr_range = "10.0.0.0/24"
 }
 
-resource "google_storage_bucket" "terraform-afrozbucket999" {
-  name          = "terraform-afrozbucket"
+resource "google_storage_bucket" "shaiksaleemafrozbucket" {
+  name          = "shaiksaleemafrozbucket"
   location      = "US"
 }
 
@@ -68,4 +68,5 @@ resource "google_compute_disk" "disk" {
   name  = "my-disk"
   size  = 10  # Size in GB (for additional storage disk)
   type  = "pd-standard"  # Standard persistent disk
+  zone  = var.zone
 }
