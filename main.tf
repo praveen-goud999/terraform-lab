@@ -11,7 +11,7 @@ resource "google_compute_subnetwork" "subnet" {
   ip_cidr_range = "10.0.0.0/24"
 }
 
-resource "google_storage_bucket" "terraform-afrozbucket" {
+resource "google_storage_bucket" "terraform-afrozbucket999" {
   name          = "terraform-afrozbucket"
   location      = "US"
 }
